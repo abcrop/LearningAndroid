@@ -19,11 +19,12 @@
             </intent-filter>
         </activity>
 
-<!--        <receiver android:name="MyBroadcastReceiver">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.AIRPLANE_MODE"/>-->
-<!--            </intent-filter>-->
-<!--        </receiver>-->
+        <!-- Using manifest based broadcast receiver-->
+        <receiver android:name="MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
